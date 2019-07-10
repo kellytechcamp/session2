@@ -1,8 +1,3 @@
-/*
-This uses a ml5 charRNN model trained on a corpus of privacy policies
-For more about ml5 see https://ml5js.org/
-*/
-
 let charRNN;
 let textInput;
 let tempSlider;
@@ -17,7 +12,7 @@ function setup() {
   noCanvas();
 
   // Create the charRNN generator passing it the model directory
-  charRNN = ml5.charRNN('religious/', modelReady);
+  charRNN = ml5.charRNN('adrian2/', modelReady);
 
   // Grab the DOM elements
   textInput = select('#textInput');
